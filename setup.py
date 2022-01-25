@@ -8,25 +8,10 @@ import pkgutil
 from setuptools import setup
 from setuptools.command.install import install
 
-
-class NewInstall(install):
-
-    @staticmethod
-    def check_pymongo():
-        if pkgutil.find_loader('pymongo'):
-            return True
-        return False
-
-    def run(self):
-        install.run(self)
-        if self.check_pymongo():
-            sys.stdout.write('\033[31mCaution! \033[33mbson(pymongo) is already installed.\033[0m\n')
-
-
 setup(
-    name="bson",
+    name="hrbson",
     version="0.5.10",
-    packages=["bson"],
+    packages=["hrbson"],
     install_requires=["python-dateutil>=2.4.0", "six>=1.9.0"],
     author="Ayun Park",
     author_email="iamparkayun@gmail.com",
@@ -35,14 +20,15 @@ setup(
     platforms="Any",
     license="BSD",
     keywords="BSON codec",
-    url="http://github.com/py-bson/bson",
+    url="http://github.com/helloretail/hrbson",
     classifiers=[
-        'Programming Language :: Python :: 2.6',
-        'Programming Language :: Python :: 2.7',
         'Programming Language :: Python :: 3.3',
         'Programming Language :: Python :: 3.4',
         'Programming Language :: Python :: 3.5',
         'Programming Language :: Python :: 3.6',
-    ],
-    cmdclass={'install': NewInstall}
+        'Programming Language :: Python :: 3.7',
+        'Programming Language :: Python :: 3.8',
+        'Programming Language :: Python :: 3.9',
+        'Programming Language :: Python :: 3.10',
+    ]
 )

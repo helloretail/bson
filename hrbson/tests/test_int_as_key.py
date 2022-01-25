@@ -1,6 +1,6 @@
 from unittest import TestCase
 
-from bson import dumps, loads
+from hrbson import dumps, loads
 import json
 
 class TestIntAsKey(TestCase):

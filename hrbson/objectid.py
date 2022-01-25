@@ -27,8 +27,8 @@ import struct
 import threading
 import time
 
-from bson.py3compat import PY3, bytes_from_hex, string_type, text_type
-from bson.tz_util import utc
+from hrbson.py3compat import PY3, bytes_from_hex, string_type, text_type
+from hrbson.tz_util import utc
 
 
 # fnv_1a_24 adaptation taken from MongoDB Python Driver at https://github.com/mongodb/mongo-python-driver/commit/61850357a0e0eeec1a30e1adc0bbf7ebee807358

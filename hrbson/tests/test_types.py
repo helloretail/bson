@@ -1,8 +1,8 @@
 #!/usr/bin/env python
 from unittest import TestCase
 
-from bson import dumps, loads
-from bson.types import UInt64, Int64, Int32
+from hrbson import dumps, loads
+from hrbson.types import UInt64, Int64, Int32
 
 
 class TestTypes(TestCase):

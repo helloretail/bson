@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 
-from bson import dumps, loads
+from hrbson import dumps, loads
 from decimal import Decimal
 from unittest import TestCase
 

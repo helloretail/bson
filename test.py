@@ -3,7 +3,7 @@
 # Copyright (c) 2011, Kou Man Tong. All rights reserved.
 # For licensing, see LICENSE file included in the package.
 
-import bson.tests
+import hrbson.tests
 
 if __name__ == "__main__":
-    bson.tests.main()
+    hrbson.tests.main()

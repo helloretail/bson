@@ -6,7 +6,7 @@ from unittest import TestCase
 from six import text_type, PY3
 from six.moves import xrange
 
-from bson import dumps, loads
+from hrbson import dumps, loads
 
 
 def populate(parent, howmany, max_children):

@@ -13,7 +13,7 @@ from abc import ABCMeta, abstractmethod
 from uuid import UUID
 from decimal import Decimal
 
-from bson.types import UInt64, Int64, Int32
+from hrbson.types import UInt64, Int64, Int32
 
 try:
     from io import BytesIO as StringIO

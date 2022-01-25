@@ -3,7 +3,7 @@ from datetime import datetime
 from unittest import TestCase
 
 from dateutil.tz import tzutc
-from bson import dumps, loads
+from hrbson import dumps, loads
 
 
 class TestDateTime(TestCase):

@@ -23,11 +23,11 @@ import struct
 
 sys.path[0:0] = [""]
 
-from bson.objectid import ObjectId, _fnv_1a_24
-from bson.objectid import InvalidId
-from bson.py3compat import PY3, _unicode
-from bson.tz_util import (FixedOffset,
-                          utc)
+from hrbson.objectid import ObjectId, _fnv_1a_24
+from hrbson.objectid import InvalidId
+from hrbson.py3compat import PY3, _unicode
+from hrbson.tz_util import (FixedOffset,
+                            utc)
 
 if sys.version_info[:2] == (2, 6):
     import unittest2 as unittest
@@ -545,7 +545,7 @@ class TestObjectId(unittest.TestCase):
         # version 1.9
         pickled_with_1_9 = (
             b"ccopy_reg\n_reconstructor\np0\n"
-            b"(cbson.objectid\nObjectId\np1\nc__builtin__\n"
+            b"(chrbson.objectid\nObjectId\np1\nc__builtin__\n"
             b"object\np2\nNtp3\nRp4\n"
             b"(dp5\nS'_ObjectId__id'\np6\n"
             b"S'M\\x9afV\\x13v\\xc0\\x0b\\x88\\x00\\x00\\x00'\np7\nsb.")
@@ -555,7 +555,7 @@ class TestObjectId(unittest.TestCase):
         # the future as well.
         pickled_with_1_10 = (
             b"ccopy_reg\n_reconstructor\np0\n"
-            b"(cbson.objectid\nObjectId\np1\nc__builtin__\n"
+            b"(chrbson.objectid\nObjectId\np1\nc__builtin__\n"
             b"object\np2\nNtp3\nRp4\n"
             b"S'M\\x9afV\\x13v\\xc0\\x0b\\x88\\x00\\x00\\x00'\np5\nb.")
 
